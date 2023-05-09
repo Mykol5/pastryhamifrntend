@@ -18,7 +18,7 @@ if (submitBtn) {
     };
 
     // Send a POST request to the server to create the new user
-    fetch('http://localhost:3000/signup', {
+    fetch('https://hamipastryservices.onrender.com/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
