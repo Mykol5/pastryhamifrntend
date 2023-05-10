@@ -88,7 +88,7 @@ if (submitBtn) {
     };
 
     // Send a POST request to the server to create the new user
-    fetch('http://localhost:5501/signup', {
+    fetch('https://hamipastryservices.onrender.com/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -98,7 +98,7 @@ if (submitBtn) {
       .then(response => {
         if (response.ok) {
           // If the response is ok, redirect the user to the dashboard page
-          window.location.href = 'http://localhost:5501/client/login.html';
+          window.location.href = 'https://pastryhamisrvcs.netlify.app/login.html';
         } else {
           // If the response is not ok, display an error message
           throw new Error('Network response was not ok');
